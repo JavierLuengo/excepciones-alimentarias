@@ -1,0 +1,350 @@
+*{
+    margin:0;
+    padding:0;
+	font-family:"Arial","Helvetica", sans-serif; 
+
+	
+    }
+
+body{
+    background-image:url("../imagenes/fondo3.jpg");
+ 	}
+	
+#validar {
+	margin:0 auto;
+	margin-top:20px;
+	margin-bottom:100px;
+	font-size:34px;
+	width:400px;
+}	
+
+	
+	
+	
+/* ------------------ contenedor general --------------------------------- */	
+#contenedor{
+	margin:0 auto;
+	width:100%;
+    background-image:url("../imagenes/fondo3.jpg");
+    
+    }	
+    
+/* ------------------- cabecera --------------------------------------------- */		
+#cabecera{
+	position:relative;
+	float:left;
+	width:100%;
+    background-image:url("../imagenes/fondo6.jpg");
+    color:white;
+	font-size:42px;
+	padding: 10px;	
+	height:60px;
+    margin-bottom:15px;
+    }
+
+#logo {
+position:relative;
+float:left;
+margin:0px;
+margin-right:40px;
+padding:0px;
+height:60px;
+}	
+	
+img#logo2 {
+height:60px;
+padding:-15px;
+}	
+
+#menu{position:relative;
+	z-index: 2;
+	float:left;
+    margin:0 auto;
+	width:80%;
+    margin-left: 10%;
+	 background-image:url("../imagenes/fondomenu5.png");
+	 background-repeat:no-repeat;
+   
+    padding-top:10px;
+    padding-bottom:10px;	
+	height:150px;
+    margin-bottom:15px;}
+/* ------------------- centro --------------------------------------------- */	
+#centro{
+
+    z-index:1;
+	position:relative;
+	float:left;
+	padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom:10px;
+	width:80%;
+    margin-left:10%;
+    
+	background-image:url("../imagenes/fondo4.png");
+    text-align:justify;
+    
+	}	
+	
+#fotocentro {
+     z-index:1;
+	position:relative;
+	float:left;
+	padding:10px;
+    margin-bottom:10px;
+    width:340px;
+    background-color:transparent;
+    
+}
+
+#textocentro {
+     z-index:1;
+	position:relative;
+	float:right;
+	padding:10px;
+    margin-bottom:10px;
+    margin-top:50px;
+    width:400px;
+    background-color:transparent;
+    color:  white;
+    
+}
+
+
+	
+/* ---------------------------------------- pie ------------------------------------------------------- */		
+#pie{
+    float: right;
+   	margin:0 auto;
+	clear:both;
+	width:100%;
+	height:40px;
+	padding:20px;
+    margin-bottom:15px;
+    background-image:url("../imagenes/fondo6.jpg");
+    color:white;
+    text-align:right;
+	}	
+
+img#fotogrande {
+	margin-top:50px;
+	margin-left:60px;
+	
+}
+
+.redondea {
+	/* Redondea los bordes en Firefox antiguos */
+	-moz-border-radius: 10px;
+	/* Redondea los bordes en Safari y Chrome */
+	-webkit-border-radius: 10px;
+	/* Redondea los bordes en IE 9 y 10, y en un futuro ser� el estandar*/
+	border-radius: 10px;
+	/* Sombrea en Firefox antiguo */
+     -moz-box-shadow: 5px 5px 10px black;
+     /* Sombrea en Safari y Chrome */
+     -webkit-box-shadow: 5px 5px 10px black;
+     /* Sombrea en IE 9 y 10, y en un futuro ser� el estandar*/
+     box-shadow: 5px 5px 10px black;
+	}
+    
+
+.alerta {
+    color:red;
+    background-color:black;
+    padding:5px;
+    text-align:center;
+    }  
+
+.aviso {
+    color:white;
+    background-color:gray;
+    padding:5px;
+    text-align:center;
+    } 
+
+/* Aqu� quitamos los margenes y paddings por defecto de los navegadores*/
+*{
+margin:0;
+padding:0;
+}
+/* Aqui quitamos los puntos de los elemento de lista y colocamos un padding a cada li para que no se pegue con el de su lado*/
+ul li{
+
+list-style:none;
+padding-left:5px;
+padding-right:5px;
+z-index:2;
+}
+/* Aqui seleccionamos los li del primer ul solamente, para que se coloque uno al lado de3l otro mediante el float:left, le damos un ancho con width y ponemos posici�n relativa para que los elementos "desplegables" no se salgan del menu */
+ul > li {
+float:left;
+width:90px;
+margin-top:5px;
+position:relative;
+}
+/* Aqui posicionamos los elementos que se desplegan, de manera absoluta para que no rompan el menu, los ocultamos por defecto y los posicionamos a la izquierda */
+ul li ul{
+position:absolute;
+display:none;
+left:-10px;
+}
+/* aqui cuando pasas por encima de los elementos primarios del menu, apareces el desplegable de dentro */
+ul > li:hover ul{
+display:block;
+}
+/* hasta aqui son estilos indispensables, a partir de aqu� estilos de visualizacion */
+ul li{
+background-color: #20B2AA;
+border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+
+ul:hover li:hover{
+background-color: green;
+font-weight:bold;
+/* Sombrea en Firefox antiguo */
+     -moz-box-shadow: 5px 5px 10px black;
+     /* Sombrea en Safari y Chrome */
+     -webkit-box-shadow: 5px 5px 10px black;
+     /* Sombrea en IE 9 y 10, y en un futuro ser� el estandar*/
+     box-shadow: 5px 5px 10px black;
+
+}
+
+ul > li{
+margin-left: 20px;
+}
+a{
+color:white;
+text-decoration:none;
+}
+
+input[type='text']{
+    width:250px;
+    font-size:18px;
+    }
+
+input.mini {
+    width:50px;
+    }
+    
+input.grande {
+	width: 700px;
+}    
+
+label {
+	display:inline-block;
+    font-size:22px;
+     margin-bottom:10px;
+     margin-right:10px;
+     
+	}
+label.grande{
+	width: 300px;
+}
+
+select.grande{
+	width: 500px;
+}	
+    
+  
+input[type='submit']{
+    
+	font-size:24px;
+    height: 70px;
+    width: 100px;
+    margin-top:20px;
+    margin-left:20px;
+    box-shadow:0 0 0 3px gray;
+    border-radius: 20px;
+    text-shadow: 1px 1px 0px gray;
+    background: #e4f1f6; 
+    background: -moz-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #e4f1f6 0%,#cfe6ef 100%);
+	}
+   
+input[type='submit']:hover{
+	background:gray;
+	background: -moz-linear-gradient(top, #edfcff 0%, gray 100%);
+    background: -webkit-linear-gradient(top, #edfcff 0%,gray 100%);
+	}
+
+input[type='submit']:active{
+    background: -moz-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
+    background: -webkit-linear-gradient(top, #cfe6ef 0%,#edfcff 100%);
+	}    
+    
+select {
+    font-size:24px;
+    height: 32px;
+    width: 200px;
+    }   
+
+ 
+.zebra caption{
+    font-size:20px;
+    font-weight:normal;
+    background:url(../img/zebratable.png);
+    background-repeat:no-repeat;
+    background-position: 130px center;
+    padding-top: 20px;
+    height:50px;}
+ 
+#container{
+    padding-top:20px;
+    width:960px;
+    margin:0 auto;
+}
+ 
+table {
+    font-size:24px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width:100%;
+    -webkit-box-shadow:  0px 2px 1px 5px rgba(242, 242, 242, 0.1);
+    box-shadow:  0px 2px 1px 5px rgba(242, 242, 242, 0.1);
+}
+ 
+.zebra {
+    border: 1px solid #555;
+}
+ 
+.zebra td {
+    border-left: 1px solid #555;
+    border-top: 1px solid #555;
+    padding: 10px;
+    text-align: left;   
+}
+ 
+.zebra th, .zebra th:hover {
+    border-left: 1px solid #555;
+    border-bottom: 1px solid #828282;
+    padding: 20px; 
+    background-color:#151515 !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#151515), to(#404040)) !important;
+    background-image: -webkit-linear-gradient(top, #151515, #404040) !important;
+    background-image:    -moz-linear-gradient(top, #151515, #404040) !important;
+    background-image:     -ms-linear-gradient(top, #151515, #404040) !important;
+    background-image:      -o-linear-gradient(top, #151515, #404040) !important;
+    background-image:         linear-gradient(top, #151515, #404040) !important;
+    color:#fff !important;
+    font-weight:normal;
+}
+ 
+.zebra tbody tr:nth-child(even) {
+    background: #000 !important;
+    color:#fff;
+}
+ 
+.zebra tr:hover *{
+    background-color: #20B2AA;
+    color:#000;
+}
+ 
+.zebra tr {
+    background:#404040;
+    color:#fff;
+}     
+    
+   

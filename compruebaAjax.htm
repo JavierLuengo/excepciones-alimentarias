@@ -1,0 +1,162 @@
+<script type='text/javascript'> 
+
+var cajanuevoNombre = document.getElementById('nuevoNombre');
+var cajanuevoCurso = document.getElementById('nuevoCurso');
+var consulta;
+
+cajanuevoNombre.onblur = function(){
+
+    try{
+   
+   if (window.ActiveXObject) {
+             
+             consulta = new ActiveXObject('Msxml2.XMLHTTP');   // IE 8, 9
+             consulta = new ActiveXObject('Microsoft.XMLHTTP');  // 7 y antes
+         
+    }else{                                // aqui vemos el navegador paso 1
+         
+             consulta = new XMLHttpRequest();
+         
+    }
+
+    consulta.onreadystatechange = cambiaEstadoTit; 
+    
+    consulta.open('POST', 'compruebaNombre.php', true);
+    consulta.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); 
+    
+    
+    consulta.send('nuevoNombre=' + cajanuevoNombre.value);
+   
+    }catch(error){
+        
+        alert(error.content);
+    }
+    }
+
+
+  function cambiaEstadoTit(){
+   
+       if(consulta.readyState == 4){
+            
+        var texto =  consulta.responseText;
+            
+        var nuevo = document.createElement('script');
+        nuevo.innerHTML = texto; 
+        document.body.appendChild(nuevo);
+    
+        }
+    }
+    
+    
+    function oculta(){
+	var error1;
+	error1=document.getElementById('error1');
+	error1.style.visibility='hidden';
+    
+    var error2;
+	error2=document.getElementById('error2');
+	error2.style.visibility='hidden';    
+    }
+	
+    
+    function oculta1(){
+    
+	var error1;
+	error1=document.getElementById('error1');
+	error1.style.visibility='hidden';
+    
+    
+	}
+    
+	function muestra1(){
+	var error1;
+	error1=document.getElementById('error1');
+	error1.style.visibility='visible';
+    
+    var enviaok;
+	enviaok=document.getElementById('enviaok');
+	enviaok.style.visibility='hidden';
+    
+	}
+    
+   
+    
+// curso ///////////////////////////////////////////////////////
+
+var cajanuevoCurso = document.getElementById('nuevoCurso');
+
+cajanuevoCurso.onblur = function(){
+
+try{
+      
+    if (window.ActiveXObject) {
+             
+             consulta = new ActiveXObject('Msxml2.XMLHTTP');   // IE 8, 9
+             consulta = new ActiveXObject('Microsoft.XMLHTTP');  // 7 y antes
+         
+    }else{                                 // aqui vemos el navegador paso 1
+         
+             consulta = new XMLHttpRequest();
+         
+    }
+
+    consulta.onreadystatechange = cambiaEstadoNot; 
+    
+    consulta.open('POST', 'compruebaCurso.php', true);
+    consulta.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); 
+    
+    
+    consulta.send('nuevoCurso=' + cajanuevoCurso.value);
+    
+   
+    }catch(error){
+        
+        alert(error.content);
+    }
+}
+
+
+
+    function cambiaEstadoNot(){
+        
+        if(consulta.readyState == 4){
+            
+           var texto =  consulta.responseText;
+            
+            var nuevo = document.createElement('script');
+            nuevo.innerHTML = texto; 
+            document.body.appendChild(nuevo);
+            
+        }
+        
+    }
+    
+   	function oculta2(){
+	var error2;
+	error2=document.getElementById('error2');
+	error2.style.visibility='hidden';
+	
+    if (error1.style.visibility='hidden'){
+    var enviaok;
+	enviaok=document.getElementById('enviaok');
+	enviaok.style.visibility='visible';
+    }
+    }
+	
+	function muestra2(){
+	var error2;
+	error2=document.getElementById('error2');
+	error2.style.visibility='visible';
+    
+    var enviaok;
+	enviaok=document.getElementById('enviaok');
+	enviaok.style.visibility='hidden';
+    
+    
+    
+    
+    
+	}
+
+
+</script>

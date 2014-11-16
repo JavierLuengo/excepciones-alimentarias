@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+	font-family:"Arial","Helvetica", sans-serif; 
+    }
+    
+#centro{
+	margin-top:10px;
+    z-index:1;
+	position:relative;
+	float:left;
+	padding:5%;
+    margin-bottom:10px;
+	width:90%;
+ 
+    text-align:justify;
+    
+	}
+	
+#centro label {
+	/*position:relative;
+	float:left;
+	width:200px;*/
+}	
+
+.izq{text-align:center;}
+.limpia{clear:both;}
+	
+#cuadroInicio {
+margin-top:80px;
+}
+
+#cuadroInicio h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+#cuadroInicio h2{
+font-size:20px;
+margin-bottom:10px;
+}
+
+#cuadroInicio input, #centro input , #centro label , #centro select ,#centro h2 {
+font-size:16px;
+padding:5px;
+margin-bottom:10px;
+margin-right:10px;
+}
+
+#centro input[type='text']{width:550px;}
+
+#fotogrande {
+width:50%;
+margin-left:25%;
+margin-right:25%;
+position:relative;
+float:left;
+margin-bottom:20px;
+}	
+
+#footer {
+position:relative;
+float:right;
+padding-right:2%;
+width:98%;
+height:30px;
+font-weight:bold;
+padding-top:10px;
+background: #ffb35a url(../images/topbg.gif) repeat-x;
+}
+	
+.centrado {text-align:center;}
+.derecha{position:relative;float:right;}
+.ancho120px {width:120px;}
+ .ancho80{width:80%;}
+ .ancho60{width:60%;}
+ 
+ .tabla2{
+ border-bottom: dotted 2px brown;	
+ margin:10px;
+ }
+ 
+ .tabla2 td{
+ 	padding:5px;
+ 	
+ 	background-color:brown;
+ 	color:white;
+ }
+ 
+.zebra {
+    border: 1px solid #555;
+    width:80%;
+  	clear:both;
+    position:relative;
+    float:left;
+}
+ 
+.zebra td {
+    border-left: 1px solid #555;
+    border-top: 1px solid #555;
+    padding: 10px;
+    text-align: left;   
+}
+ 
+.zebra th, .zebra th:hover {
+    border-left: 1px solid #555;
+    border-bottom: 1px solid #828282;
+    padding: 20px; 
+    background-color:#151515 !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#151515), to(#404040)) !important;
+    background-image: -webkit-linear-gradient(top, #151515, #404040) !important;
+    background-image:    -moz-linear-gradient(top, #151515, #404040) !important;
+    background-image:     -ms-linear-gradient(top, #151515, #404040) !important;
+    background-image:      -o-linear-gradient(top, #151515, #404040) !important;
+    background-image:         linear-gradient(top, #151515, #404040) !important;
+    color:#fff !important;
+    font-weight:normal;
+}
+ 
+.zebra tbody tr:nth-child(even) {
+    background: #000 !important;
+    color:#fff;
+}
+ 
+.zebra tr:hover *{
+    background-color: #FFAE4F;
+    color:#000;
+}
+ 
+.zebra tr {
+    background:#404040;
+    color:#fff;
+}
+
+#centro input[type='submit']{
+	background-color:#D98D41;
+	color:white;
+	border:none;
+	padding:12px;
+	margin:20px;
+	cursor: pointer;
+	}
+	
+#centro input[type='submit']:hover{
+	opacity:0.7;
+	}	    
